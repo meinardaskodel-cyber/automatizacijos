@@ -1,0 +1,282 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2865
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 .AppleSystemUIFontMonospaced-Regular;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab560
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!doctype html>\
+<html lang="lt">\
+<head>\
+  <meta charset="utf-8" />\
+  <meta name="viewport" content="width=device-width,initial-scale=1" />\
+  <title>Auto PostPilot \'97 Automatizacijos ir AI botai verslui</title>\
+  <meta name="description" content="Sutaupyk laik\uc0\u261  su n8n, OpenAI ir CRM automatizacijomis. Kuriame AI pokalbi\u371  botus, el. lai\'9ak\u371  ir social media autopilot\u261 ." />\
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E\uc0\u55358 \u56598 %3C/text%3E%3C/svg%3E">\
+  <meta property="og:title" content="Auto PostPilot \'97 Automatizacijos ir AI botai verslui">\
+  <meta property="og:description" content="Automatizuok pasikartojan\uc0\u269 ius darbus. Daugiau pardavim\u371 , ma\'9eiau rankinio darbo.">\
+  <meta property="og:type" content="website">\
+  <meta property="og:image" content="cover.jpg">\
+  <meta name="color-scheme" content="light dark">\
+\
+  <style>\
+    :root \{\
+      --bg: #0b0c10;\
+      --panel: #121319;\
+      --text: #e9ecf1;\
+      --muted: #a8b0bd;\
+      --brand: #7c5cff;\
+      --brand-2: #3fe0c5;\
+      --border: #242634;\
+      --shadow: 0 10px 30px rgba(0,0,0,.35);\
+      --radius: 14px;\
+      --trans: 220ms cubic-bezier(.2,.8,.2,1);\
+    \}\
+    @media (prefers-color-scheme: light) \{\
+      :root \{\
+        --bg: #f7f8fb;\
+        --panel: #ffffff;\
+        --text: #0c1020;\
+        --muted: #5e6574;\
+        --border: #e7e9ef;\
+        --shadow: 0 8px 28px rgba(9,12,32,.08);\
+      \}\
+    \}\
+    * \{ box-sizing: border-box; \}\
+    html, body \{ margin:0; padding:0; background:var(--bg); color:var(--text); font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif; \}\
+    a \{ color: inherit; text-decoration: none; \}\
+    img, video \{ max-width:100%; display:block; \}\
+    .container \{ width: min(1100px, 92vw); margin: 0 auto; \}\
+\
+    /* Header */\
+    header \{ position: sticky; top:0; z-index: 50; backdrop-filter: saturate(140%) blur(10px); background: color-mix(in hsl, var(--bg) 85%, transparent); border-bottom: 1px solid var(--border); \}\
+    .nav \{ display:flex; align-items:center; justify-content:space-between; padding:14px 0; \}\
+    .brand \{ display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.2px; \}\
+    .brand .logo \{ width:34px; height:34px; display:grid; place-items:center; background:linear-gradient(135deg,var(--brand),var(--brand-2)); color:#fff; border-radius:10px; box-shadow: var(--shadow); \}\
+    .nav a.cta \{ padding:10px 16px; border:1px solid var(--border); border-radius:10px; transition:transform var(--trans), background var(--trans); \}\
+    .nav a.cta.primary \{ background: linear-gradient(135deg, var(--brand), var(--brand-2)); color:#061018; border:0; font-weight:700; \}\
+    .nav a.cta:hover \{ transform: translateY(-1px); \}\
+\
+    /* Hero */\
+    .hero \{ padding: clamp(48px, 6vw, 84px) 0 36px; display:grid; gap:36px; grid-template-columns: 1.1fr .9fr; align-items:center; \}\
+    @media (max-width: 900px)\{ .hero \{ grid-template-columns: 1fr; \} \}\
+    h1 \{ font-size: clamp(28px, 4.2vw, 50px); line-height:1.1; margin:0 0 14px; letter-spacing:-.3px;\}\
+    .lead \{ color: var(--muted); font-size: clamp(16px, 1.6vw, 18px); \}\
+    .actions \{ display:flex; gap:12px; margin-top:16px; flex-wrap:wrap; \}\
+    .chip \{ display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border:1px dashed var(--border); border-radius:999px; color:var(--muted); width:max-content; \}\
+\
+    .card-video \{ background:var(--panel); border:1px solid var(--border); border-radius: var(--radius); padding:14px; box-shadow: var(--shadow); position:relative; \}\
+    .badge \{ position:absolute; left:14px; top:14px; background: #10131a; color:#dff6ff; padding:6px 10px; border-radius:999px; border:1px solid var(--border); font-size:12px; \}\
+    .note \{ color:var(--muted); font-size:12px; margin-top:10px; \}\
+\
+    /* Sections */\
+    section \{ padding: 54px 0; \}\
+    h2 \{ font-size: clamp(22px, 3vw, 34px); margin:0 0 10px; \}\
+    .grid \{ display:grid; gap:18px; grid-template-columns: repeat(3,1fr); \}\
+    @media (max-width: 900px)\{ .grid \{ grid-template-columns: 1fr; \} \}\
+\
+    .feature \{ background:var(--panel); border:1px solid var(--border); padding:18px; border-radius: var(--radius); transition: transform var(--trans), border-color var(--trans); \}\
+    .feature:hover \{ transform: translateY(-2px); border-color: color-mix(in hsl, var(--brand) 40%, var(--border)); \}\
+    .kpi \{ display:flex; gap:10px; align-items:center; font-weight:700; \}\
+    .muted \{ color:var(--muted); \}\
+\
+    /* Pricing */\
+    .pricing \{ display:grid; gap:18px; grid-template-columns: repeat(3,1fr); align-items:stretch; \}\
+    @media (max-width: 900px)\{ .pricing \{ grid-template-columns: 1fr; \} \}\
+    .plan \{ background:var(--panel); border:1px solid var(--border); border-radius: var(--radius); padding:22px; display:flex; flex-direction:column; gap:14px; justify-content:space-between; \}\
+    .plan.pop \{ outline:2px solid color-mix(in hsl, var(--brand) 50%, var(--border)); transform: translateY(-2px); \}\
+    .plan ul \{ padding-left: 18px; margin:0; \}\
+    .plan li \{ margin: 6px 0; \}\
+\
+    /* FAQ */\
+    details \{ background:var(--panel); border:1px solid var(--border); border-radius: var(--radius); padding:16px 18px; \}\
+    details + details \{ margin-top:12px; \}\
+    summary \{ cursor:pointer; font-weight:600; \}\
+\
+    /* Footer */\
+    footer \{ padding:28px 0 48px; color:var(--muted); border-top:1px solid var(--border); \}\
+\
+    /* Tiny helpers */\
+    .btn \{ display:inline-flex; gap:10px; align-items:center; padding:12px 16px; border-radius: 12px; border:1px solid var(--border); font-weight:700; transition: transform var(--trans), background var(--trans); \}\
+    .btn.primary \{ background: linear-gradient(135deg, var(--brand), var(--brand-2)); color:#061018; border:0; \}\
+    .btn:hover \{ transform: translateY(-1px); \}\
+    .tag \{ font-size:12px; padding:4px 8px; border-radius:999px; background: color-mix(in hsl, var(--brand) 20%, var(--panel)); border:1px solid var(--border); \}\
+\
+    /* Animations */\
+    @keyframes pop \{ from\{ transform:scale(.98); opacity:.0 \} to\{ transform:scale(1); opacity:1 \} \}\
+    .fade-in \{ animation: pop .6s var(--trans) both; \}\
+  </style>\
+</head>\
+<body>\
+  <header>\
+    <div class="container nav">\
+      <a class="brand" href="#top" aria-label="Gr\uc0\u303 \'9eti \u303  prad\'9ei\u261 ">\
+        <span class="logo" aria-hidden="true">\uc0\u9889 </span>\
+        <span>Auto&nbsp;PostPilot</span>\
+      </a>\
+      <nav aria-label="Pagrindin\uc0\u279  navigacija">\
+        <a class="cta" href="#services">Paslaugos</a>\
+        <a class="cta" href="#pricing">Kainos</a>\
+        <a class="cta" href="#faq">FAQ</a>\
+        <a class="cta primary" href="#contact">Gauti pasi\uc0\u363 lym\u261 </a>\
+      </nav>\
+    </div>\
+  </header>\
+\
+  <main id="top" class="container">\
+    <section class="hero">\
+      <div>\
+        <span class="chip">\uc0\u9201 \u65039  Sutaupyk 10+ val./sav.</span>\
+        <h1>Automatizacijos ir AI botai, kurie dirba u\'9e tave</h1>\
+        <p class="lead">n8n + OpenAI + CRM integracijos. Social media autopilotas, el. pa\'9ato atsakymai, \uc0\u303 kelt\u371  u\'9eduo\u269 i\u371  apdorojimas ir pardavim\u371  \'84piltuvai\'93 \'97 viskas sujungta \u303  vien\u261  veikian\u269 i\u261  sistem\u261 .</p>\
+        <div class="actions">\
+          <a class="btn primary" href="#contact">Papra\'9ayti audito</a>\
+          <a class="btn" href="#demo">Per\'9ei\uc0\u363 r\u279 ti demo</a>\
+        </div>\
+        <p class="muted" style="margin-top:8px;">Diegiame per 3\'9610 d. \'95 Skaidrios kainos \'95 Be \'84vendor lock\'93</p>\
+      </div>\
+\
+      <div id="demo" class="card-video fade-in" aria-labelledby="demoTitle">\
+        <div class="badge">\uc0\u55356 \u57260  Demo video</div>\
+        <!-- 1) Tiesioginis MP4/WebM -->\
+        <video controls playsinline poster="cover.jpg" style="border-radius:10px; width:100%;">\
+          <source src="demo.webm" type="video/webm">\
+          <source src="demo.mp4" type="video/mp4">\
+          J\uc0\u363 s\u371  nar\'9aykl\u279  nepalaiko video elemento.\
+        </video>\
+        <!-- 2) Arba YouTube/TikTok embed (pakeisk URL) -->\
+        <!--\
+        <div style="position:relative; padding-top:56.25%; margin-top:12px;">\
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Auto PostPilot Demo"\
+                  style="position:absolute; inset:0; width:100%; height:100%; border:0; border-radius:10px;"\
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>\
+          </iframe>\
+        </div>\
+        -->\
+        <p id="demoTitle" class="note">Pakeisk <code>demo.mp4</code>/<code>demo.webm</code> savo video i\'9a Midjourney/Runway ir pan.</p>\
+      </div>\
+    </section>\
+\
+    <section id="services">\
+      <h2>Kaip padedame</h2>\
+      <div class="grid">\
+        <div class="feature">\
+          <div class="kpi">\uc0\u55358 \u56598  AI botai <span class="tag">24/7</span></div>\
+          <p class="muted">Klient\uc0\u371  aptarnavimas, kain\u371  klausimai, susitikim\u371  rezervacijos. Integracijos su WhatsApp, Instagram, web chat.</p>\
+        </div>\
+        <div class="feature">\
+          <div class="kpi">\uc0\u55357 \u56599  CRM + el. pa\'9atas</div>\
+          <p class="muted">Gmail \uc0\u8594  AI santrauka \u8594  Notion/Sheets \u8594  atsakymo juodra\'9atis \u8594  i\'9asiuntimas per Gmail. Pilnas takelis.</p>\
+        </div>\
+        <div class="feature">\
+          <div class="kpi">\uc0\u55357 \u56547  Social autopilotas</div>\
+          <p class="muted">Generuojami postai, planavimas, analiz\uc0\u279 . Facebook, Instagram, LinkedIn, X su Buffer/Meta API.</p>\
+        </div>\
+      </div>\
+    </section>\
+\
+    <section aria-labelledby="proof">\
+      <h2 id="proof">Rezultatai, ne pa\'9eadai</h2>\
+      <div class="grid">\
+        <div class="feature">\
+          <div class="kpi">\uc0\u8722 63% rankinio darbo</div>\
+          <p class="muted">El. pa\'9ato apdorojimas ir atsakymai sutrump\uc0\u279 ja ~2\'963 kartus.</p>\
+        </div>\
+        <div class="feature">\
+          <div class="kpi">+28% konversij\uc0\u371 </div>\
+          <p class="muted">Greiti atsakymai + automatiniai follow-up\'92ai = daugiau pardavim\uc0\u371 .</p>\
+        </div>\
+        <div class="feature">\
+          <div class="kpi">3\'9610 d.</div>\
+          <p class="muted">Tipin\uc0\u279  diegimo trukm\u279  nuo audito iki pirmo \'84go-live\'93.</p>\
+        </div>\
+      </div>\
+    </section>\
+\
+    <section id="pricing">\
+      <h2>Kainodara</h2>\
+      <div class="pricing">\
+        <div class="plan">\
+          <div>\
+            <h3>Starter</h3>\
+            <p class="muted">Ma\'9eoms komandoms</p>\
+          </div>\
+          <p><strong>\'80490</strong> diegimas \'95 \'8099/m\uc0\u279 n</p>\
+          <ul class="muted">\
+            <li>Gmail \uc0\u8594  AI \u8594  Sheets/Notion</li>\
+            <li>1 social kanalas + planavimas</li>\
+            <li>Pagr. chatbot (web)</li>\
+          </ul>\
+          <a class="btn" href="#contact">Pasirinkti</a>\
+        </div>\
+        <div class="plan pop">\
+          <div>\
+            <h3>Growth</h3>\
+            <p class="muted">Augan\uc0\u269 iam verslui</p>\
+          </div>\
+          <p><strong>\'80990</strong> diegimas \'95 \'80249/m\uc0\u279 n</p>\
+          <ul class="muted">\
+            <li>2\'963 social kanalai + analiz\uc0\u279 </li>\
+            <li>CRM sink + el. lai\'9ak\uc0\u371  \'9aablonai</li>\
+            <li>WhatsApp/IG bot integracija</li>\
+          </ul>\
+          <a class="btn primary" href="#contact">Populiariausias</a>\
+        </div>\
+        <div class="plan">\
+          <div>\
+            <h3>Custom</h3>\
+            <p class="muted">Pilnai pritaikyta</p>\
+          </div>\
+          <p><strong>nuo \'802,490</strong></p>\
+          <ul class="muted">\
+            <li>Nenuolatiniai skriptai ir n8n srautai</li>\
+            <li>ERP/Payments integracijos</li>\
+            <li>SLAs ir steb\uc0\u279 sena</li>\
+          </ul>\
+          <a class="btn" href="#contact">Susitarti d\uc0\u279 l skambu\u269 io</a>\
+        </div>\
+      </div>\
+    </section>\
+\
+    <section id="faq">\
+      <h2>Da\'9eniausi klausimai</h2>\
+      <details>\
+        <summary>Ar galiu prad\uc0\u279 ti tik su el. pa\'9atu ir v\u279 liau pl\u279 sti?</summary>\
+        <p class="muted">Taip. Modulin\uc0\u279  architekt\u363 ra leid\'9eia prid\u279 ti social, chatbot ar mok\u279 jimus kada panor\u279 site.</p>\
+      </details>\
+      <details>\
+        <summary>Ar dirbate su lietuvi\uc0\u371 , norveg\u371  ir angl\u371  kalbomis?</summary>\
+        <p class="muted">Taip, botai ir \'9aablonai gali b\uc0\u363 ti daugiakalbiai.</p>\
+      </details>\
+      <details>\
+        <summary>Kas apie duomen\uc0\u371  saug\u261 ?</summary>\
+        <p class="muted">Naudojame OAuth, ribotus API raktus, logavim\uc0\u261  ir prieigos valdym\u261 . Galimas \'84self-hosted\'93 n8n.</p>\
+      </details>\
+    </section>\
+\
+    <section id="contact">\
+      <h2>Gauk nemokam\uc0\u261  30 min. audit\u261 </h2>\
+      <p class="muted">Trumpai apra\'9ayk savo situacij\uc0\u261  \'97 atsi\u371 sime pasi\u363 lym\u261  ir plan\u261 .</p>\
+      <form action="mailto:hello@autopostpilot.example" method="post" enctype="text/plain" class="feature" aria-label="Kontaktin\uc0\u279  forma">\
+        <label>Vardas<br><input name="name" required style="width:100%; padding:12px; border-radius:10px; border:1px solid var(--border); background:var(--panel); color:var(--text)"></label><br><br>\
+        <label>El. pa\'9atas<br><input type="email" name="email" required style="width:100%; padding:12px; border-radius:10px; border:1px solid var(--border); background:var(--panel); color:var(--text)"></label><br><br>\
+        <label>\'8einut\uc0\u279 <br><textarea name="message" rows="5" placeholder="Trumpai: k\u261  norite automatizuoti?" style="width:100%; padding:12px; border-radius:10px; border:1px solid var(--border); background:var(--panel); color:var(--text)"></textarea></label><br><br>\
+        <button class="btn primary" type="submit">Si\uc0\u371 sti</button>\
+        <p class="note">Arba para\'9ayk tiesiai: <a href="mailto:hello@autopostpilot.example">hello@autopostpilot.example</a>. V\uc0\u279 liau \'84action\'93 pakeisi \u303  n8n webhook URL.</p>\
+      </form>\
+    </section>\
+  </main>\
+\
+  <footer>\
+    <div class="container">\
+      \'a9 <span id="y"></span> Auto PostPilot \'95 Privatumas \'95 S\uc0\u261 lygos\
+    </div>\
+  </footer>\
+\
+  <script>\
+    document.getElementById('y').textContent = new Date().getFullYear();\
+  </script>\
+</body>\
+</html>\
+}
